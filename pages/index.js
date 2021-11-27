@@ -2,14 +2,7 @@ import HomeLayout from '../components/HomeLayout'
 export default function Index() {
   return (
     <div className="container">
-        
+        dasdassdadsasas
     </div>
-  )
-}
-Index.getLayout = function getLayout (page) {
-  return (
-    <HomeLayout>
-      {page}
-    </HomeLayout>
   )
 }
