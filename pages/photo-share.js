@@ -1,5 +1,14 @@
+import Head from 'next/head'
+
 export default function photoShare () {
   return (
-    <h1>photoShare</h1>
+    <>
+      <Head>
+        <title>photoShare</title>
+      </Head>
+      <div className="container">
+        photoShare
+      </div>
+    </>
   )
 }

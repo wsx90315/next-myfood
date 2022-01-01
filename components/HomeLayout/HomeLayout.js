@@ -3,6 +3,7 @@ import styles from './HomeLayout.module.sass'
 import { Layout } from 'antd';
 import HomeSider from '../HomeSider'
 import HomeHeader from '../HomeHeader'
+import AccoutShopCart from '../AccoutShopCart'
 const { Header, Content, Sider } = Layout;
 const HomeLayout = ({ children, className }) => {
   let mainLayoutClassName = styles['main-layout'];
@@ -14,9 +15,6 @@ const HomeLayout = ({ children, className }) => {
 
   return (
     <>
-      <Head>
-        <title>Layout Title</title>
-      </Head>
       <main>
         <Layout className={mainLayoutClassName}>
           {/* {children} */}
@@ -24,14 +22,14 @@ const HomeLayout = ({ children, className }) => {
             <HomeSider></HomeSider>
           </Sider>
           <Layout className="main-site-layout">
-            <Header style={{ background: '#fff' }}>
+            <Header style={{ background: '#faf9fb' }}>
               <HomeHeader></HomeHeader>
             </Header>
             <Header className={mainSiteHeaderClassName} style={{ padding: 0 }} />
             <Content>{children}</Content>
           </Layout>
           <Sider width={300} theme={'light'}>
-            uese Data
+            <AccoutShopCart />
           </Sider>
         </Layout>
       </main>

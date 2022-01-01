@@ -1,6 +1,14 @@
+import Head from 'next/head'
 
-export default function Meessages () {
+export default function Messages () {
   return (
-      <h1>Messages</h1>
+    <>
+      <Head>
+        <title>Messages</title>
+      </Head>
+      <div className="container">
+        Messages
+      </div>
+    </>
   )
 }

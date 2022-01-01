@@ -15,10 +15,10 @@ const HomeSider = ({ children, className }) => {
   const linkList = [
     { id: 1, href: '/', icon: HomeOutlined },
     { id: 2, href: '/photo-share', icon: CameraOutlined },
-    { id: 3, href: '/3', icon: HeartOutlined },
-    { id: 4, href: '/4', icon: FileTextOutlined },
-    { id: 5, href: '/messages', icon: MessageOutlined },
-    { id: 6, href: '/5', icon: SettingOutlined }
+    { id: 3, href: '/favorite', icon: HeartOutlined },
+    // { id: 4, href: '/4', icon: FileTextOutlined },
+    { id: 4, href: '/messages', icon: MessageOutlined },
+    { id: 5, href: '/edit', icon: SettingOutlined }
   ]
   const ListDom = linkList.map(it => {
     return (

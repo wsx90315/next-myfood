@@ -1,12 +1,12 @@
 import Head from 'next/head'
-export default function Index() {
+export default function Favorite () {
   return (
     <>
     <Head>
-      <title>Home</title>
+      <title>Favorite</title>
     </Head>
     <div className="container">
-      dasdassdadsasas
+      <h1>Favorite</h1>
     </div>
     </>
   )

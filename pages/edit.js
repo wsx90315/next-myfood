@@ -1,12 +1,13 @@
 import Head from 'next/head'
-export default function Index() {
+
+export default function Edit () {
   return (
     <>
     <Head>
-      <title>Home</title>
+      <title>edit</title>
     </Head>
     <div className="container">
-      dasdassdadsasas
+      <h1>edit</h1>
     </div>
     </>
   )
