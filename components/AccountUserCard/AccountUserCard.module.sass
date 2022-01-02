@@ -1,0 +1,38 @@
+$card-height: 200px
+.main
+  display: flex
+  justify-content: center
+  position: relative
+  width: 100%
+  height: $card-height
+  margin: 16px 0
+.card
+  position: relative
+  overflow: hidden
+  width: 260px
+  height: 170px
+  border-radius: 20px
+  z-index: 2
+.cardBg
+    position: absolute
+    width: 260px
+    height: 170px
+    border-radius: 20px
+    background: rgb(252, 148, 2)
+    transform: rotate(7deg)
+    z-index: 1
+.background
+  position: absolute
+  background: rgba(255, 190, 98, 0.817)
+  filter: blur(3px)
+  width: 100%
+  height: $card-height
+  z-index: 3
+
+.layout
+  position: relative
+  z-index: 4
+  height: $card-height
+  padding: 12px
+  color: #fff
+  font-weight: 700

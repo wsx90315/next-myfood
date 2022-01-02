@@ -6,6 +6,6 @@ module.exports = {
     defaultLocale: 'zh-tw',
   },
   sassOptions: {
-    includePaths: [path.join(__dirname, 'styles')],
+    includePaths: [path.join(__dirname, 'styles')]
   },
 }

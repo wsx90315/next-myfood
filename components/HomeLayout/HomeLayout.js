@@ -28,7 +28,7 @@ const HomeLayout = ({ children, className }) => {
             <Header className={mainSiteHeaderClassName} style={{ padding: 0 }} />
             <Content>{children}</Content>
           </Layout>
-          <Sider width={300} theme={'light'}>
+          <Sider width={360} theme={'light'}>
             <AccoutShopCart />
           </Sider>
         </Layout>

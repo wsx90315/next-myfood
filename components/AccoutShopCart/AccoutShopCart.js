@@ -1,24 +1,27 @@
 import { Row, Col } from "antd"
 import { Badge, Button } from 'antd';
 import AccountUserSelect from '../AccountUserSelect'
-import { AccoutShopCartLayout, button } from './AccoutShopCart.module.sass'
-import {
-  BellOutlined
-} from '@ant-design/icons';
+import AccountUserBell from '../AccountUserBell'
+import AccountUserCard from '../AccountUserCard'
+import { AccoutShopCartLayout } from './AccoutShopCart.module.sass'
+
 const AccoutShopCart = () => {
   return (
-    <Row align="middle" className={AccoutShopCartLayout}>
-      <Col>
-        <Button size="large" className={button} shape="circle" type="text">
-          <Badge count={5}>
-            <BellOutlined style={{fontSize: '20px'}}/>
-          </Badge>
-        </Button>
+    <>
+    <Row gutter={16} align="middle" justify="end" className={AccoutShopCartLayout}>
+      <Col flex="none">
+        <AccountUserBell></AccountUserBell>
       </Col>
-      <Col>
+      <Col flex="200px">
         <AccountUserSelect />
       </Col>
     </Row>
+    <Row>
+      <Col span={24}>
+        <AccountUserCard />
+      </Col>
+    </Row>
+    </>
   )
 }
 
